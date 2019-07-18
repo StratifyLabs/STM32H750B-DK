@@ -1,0 +1,12 @@
+{
+   "description": "Board support package for the Fogo Tango project.",
+   "github": "https://github.com/tyler-gilbert/TangoFW",
+   "name": "TangoBSP",
+   "permissions": "searchable",
+   "publisher": "Fogo Digital, Inc",
+   "tags": "stm32,arm,cortex-m7",
+   "type": "os",
+   "uid": "QSW7bQHeDqhJEcZ0mxQ5SmEYUSL2",
+   "version": "0.2",
+   "hardwareId": "0x00000017"
+}

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="STM32H750B-DK"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\Applications\;CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\;CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\;CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\;CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\;CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="size_STM32H750B-DK_release_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 size_STM32H750B-DK_release_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="asm_STM32H750B-DK_debug_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 asm_STM32H750B-DK_debug_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="asm_STM32H750B-DK_release_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 asm_STM32H750B-DK_release_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bin_STM32H750B-DK_release_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 bin_STM32H750B-DK_release_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="asm_STM32H750B-DK_debug">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 asm_STM32H750B-DK_debug"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_release_boot.elf">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_release_boot/STM32H750B-DK_release_boot.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xb"/>
+					<Add option="-D_IS_BOOT=1"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_release_boot.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_release_boot.elf/fast">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_release_boot/STM32H750B-DK_release_boot.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xb"/>
+					<Add option="-D_IS_BOOT=1"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_release_boot.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flash_STM32H750B-DK_debug">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 flash_STM32H750B-DK_debug"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_debug.elf">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug/STM32H750B-DK_debug.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D___debug"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xbram"/>
+					<Add option="-D_IS_BOOT=0"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_debug.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_debug.elf/fast">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug/STM32H750B-DK_debug.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D___debug"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xbram"/>
+					<Add option="-D_IS_BOOT=0"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_debug.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flash_STM32H750B-DK_release_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 flash_STM32H750B-DK_release_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="size_STM32H750B-DK_debug">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 size_STM32H750B-DK_debug"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bin_STM32H750B-DK_release">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 bin_STM32H750B-DK_release"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_debug_boot.elf">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot/STM32H750B-DK_debug_boot.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D___debug"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xb"/>
+					<Add option="-D_IS_BOOT=1"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_debug_boot.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_debug_boot.elf/fast">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot/STM32H750B-DK_debug_boot.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D___debug"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xb"/>
+					<Add option="-D_IS_BOOT=1"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_debug_boot.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="asm_STM32H750B-DK_release">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 asm_STM32H750B-DK_release"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bin_STM32H750B-DK_debug_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 bin_STM32H750B-DK_debug_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flash_STM32H750B-DK_release">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 flash_STM32H750B-DK_release"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="release">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 release"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="debug_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 debug_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flash_STM32H750B-DK_debug_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 flash_STM32H750B-DK_debug_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bin_STM32H750B-DK_debug">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 bin_STM32H750B-DK_debug"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="size_STM32H750B-DK_debug_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 size_STM32H750B-DK_debug_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="size_STM32H750B-DK_release">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 size_STM32H750B-DK_release"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="release_boot">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 release_boot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="debug">
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 debug"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_release.elf">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_release/STM32H750B-DK_release.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xbram"/>
+					<Add option="-D_IS_BOOT=0"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_release.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32H750B-DK_release.elf/fast">
+				<Option output="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_release/STM32H750B-DK_release.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tgil/git/StratifyBSP/STM32H750B-DK/build_debug_boot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__StratifyOS__"/>
+					<Add option="-D__"/>
+					<Add option="-D__HARDWARE_ID=0x00000016"/>
+					<Add option="-D__stm32h750xx"/>
+					<Add option="-D__stm32h750xbram"/>
+					<Add option="-D_IS_BOOT=0"/>
+					<Add option="-DMCU_SOS_GIT_HASH=0000000"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/mcu/arch/stm32/cmsis"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/Applications/StratifyLabs-SDK/Tools/gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 STM32H750B-DK_release.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/tgil/git/StratifyBSP/STM32H750B-DK/cmake_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/SystemClock_Config.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/board_config.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/board_config.h">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/board_symbols.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/config.h">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/kernel_request.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/link_config.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/link_config.h">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/mcu_config.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/sos_config.c">
+			<Option target="STM32H750B-DK_release_boot.elf"/>
+			<Option target="STM32H750B-DK_debug.elf"/>
+			<Option target="STM32H750B-DK_debug_boot.elf"/>
+			<Option target="STM32H750B-DK_release.elf"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-bsp-toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-bsp.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-build-flags.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-gcc-toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-sdk.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/../../../../../Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake/sos-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Applications\StratifyLabs-SDK\Tools\gcc\arm-none-eabi\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tgil/git/StratifyBSP/STM32H750B-DK/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
