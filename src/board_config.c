@@ -23,6 +23,7 @@ limitations under the License.
 #include <cortexm/task.h>
 #include <sos/link/types.h>
 #include "board_config.h"
+#include <mcu/arch/stm32/stm32h7xx/stm32h7xx_hal.h>
 
 #define TRACE_COUNT 8
 #define TRACE_FRAME_SIZE sizeof(link_trace_event_t)
@@ -35,6 +36,7 @@ const ffifo_config_t board_trace_config = {
 };
 ffifo_state_t board_trace_state;
 
+extern void SystemClock_Config();
 
 void board_trace_event(void * event){
 	link_trace_event_header_t * header = event;
@@ -56,6 +58,7 @@ void board_event_handler(int event, void * args){
 			break;
 
 		case MCU_BOARD_CONFIG_EVENT_ROOT_FATAL:
+
 			//start the bootloader on a fatal event
 			//mcu_core_invokebootloader(0, 0);
 			if( args != 0 ){
@@ -66,6 +69,10 @@ void board_event_handler(int event, void * args){
 			while(1){
 				;
 			}
+			break;
+
+		case MCU_BOARD_CONFIG_EVENT_ROOT_INITIALIZE_CLOCK:
+			SystemClock_Config();
 			break;
 
 		case MCU_BOARD_CONFIG_EVENT_START_INIT:

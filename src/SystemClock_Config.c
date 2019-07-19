@@ -1,26 +1,25 @@
 
 #include <mcu/arch.h>
 #include <mcu/arch/stm32/stm32h7xx/stm32h7xx_hal.h>
+#include <sos/sos.h>
 
 
 void SystemClock_Config(){
 
-	RCC_OscInitTypeDef RCC_OscInitStruct;
-	RCC_ClkInitTypeDef RCC_ClkInitStruct;
-	RCC_PeriphCLKInitTypeDef PeriphClkInitStruct;
+	RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+	RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+	RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
-	/**Supply configuration update enable
-	 */
+	/** Supply configuration update enable
+	  */
 	HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
-
-	/**Configure the main internal regulator output voltage
-	 */
+	/** Configure the main internal regulator output voltage
+	  */
 	__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
 	while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
-
-	/**Initializes the CPU, AHB and APB busses clocks
-	 */
+	/** Initializes the CPU, AHB and APB busses clocks
+	  */
 	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI48|RCC_OSCILLATORTYPE_HSI;
 	RCC_OscInitStruct.HSIState = RCC_HSI_DIV1;
 	RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
@@ -30,18 +29,19 @@ void SystemClock_Config(){
 	RCC_OscInitStruct.PLL.PLLM = 4;
 	RCC_OscInitStruct.PLL.PLLN = 50;
 	RCC_OscInitStruct.PLL.PLLP = 2;
-	RCC_OscInitStruct.PLL.PLLQ = 4;
+	RCC_OscInitStruct.PLL.PLLQ = 2;
 	RCC_OscInitStruct.PLL.PLLR = 2;
 	RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_3;
 	RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
 	RCC_OscInitStruct.PLL.PLLFRACN = 0;
 	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
 	{
+		while(1){
 
+		}
 	}
-
-	/**Initializes the CPU, AHB and APB busses clocks
-	 */
+	/** Initializes the CPU, AHB and APB busses clocks
+	  */
 	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
 			|RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
 			|RCC_CLOCKTYPE_D3PCLK1|RCC_CLOCKTYPE_D1PCLK1;
@@ -55,18 +55,21 @@ void SystemClock_Config(){
 
 	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
 	{
+		while(1){
 
+		}
 	}
-
 	PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_USB;
 	PeriphClkInitStruct.Usart234578ClockSelection = RCC_USART234578CLKSOURCE_D2PCLK1;
 	PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
 	if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
 	{
+		while(1){
 
+		}
 	}
-
-	HAL_PWREx_EnableUSBVoltageDetector();
-
+	/** Enable USB Voltage detector
+	  */
+	//HAL_PWREx_EnableUSBVoltageDetector();
 
 }

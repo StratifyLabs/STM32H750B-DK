@@ -46,11 +46,11 @@ const stm32_config_t stm32_config = {
 const mcu_board_config_t mcu_board_config = {
 	 .core_cpu_freq = SOS_BOARD_SYSTEM_CLOCK,
 	 .usb_max_packet_zero = 64,
-	 .debug_uart_port = 1,
+	 .debug_uart_port = 2, //USART3
 	 .debug_uart_attr = {
 		  .pin_assignment = {
-				.rx = {0, 3},
-				.tx = {0, 2},
+				.rx = {1, 11}, //PB10
+				.tx = {1, 10}, //PB11
 				.cts = {0xff, 0xff},
 				.rts = {0xff, 0xff}
 		  },
@@ -58,9 +58,9 @@ const mcu_board_config_t mcu_board_config = {
 		  .o_flags = UART_FLAG_SET_LINE_CODING_DEFAULT,
 		  .width = 8
 	 },
-	 .o_flags = MCU_BOARD_CONFIG_FLAG_ENABLE_CACHE | MCU_BOARD_CONFIG_FLAG_LED_ACTIVE_HIGH,
+	 .o_flags = MCU_BOARD_CONFIG_FLAG_ENABLE_CACHE,
 	 .event_handler = SOS_BOARD_EVENT_HANDLER,
-	 .led = {2, 6},
+	 .led = {9, 2}, //PJ2
 	 .arch_config = &stm32_config,
 	 .o_mcu_debug = MCU_DEBUG_INFO | MCU_DEBUG_SYS | MCU_DEBUG_USER0 | MCU_DEBUG_USER1 | MCU_DEBUG_DEVICE
 };

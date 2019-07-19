@@ -21,6 +21,7 @@ limitations under the License.
 #define CONFIG_H_
 
 #include <mcu/arch.h>
+#include "sl_config.h"
 
 #include "board_config.h"
 
@@ -28,11 +29,11 @@ limitations under the License.
 //openocd -f stlink-fixed.cfg -f target/stm32h7x.cfg -c "program ./TangoBSP/build_debug_boot/TangoBSP.bin 0x08000000; reset run; exit;"
 
 
-#define SOS_BOARD_SYSTEM_CLOCK 216000000
+#define SOS_BOARD_SYSTEM_CLOCK 400000000
 #define SOS_BOARD_SYSTEM_MEMORY_SIZE (8192*3)
-#define SOS_BOARD_ID ""
+#define SOS_BOARD_ID SL_CONFIG_DOCUMENT_ID
 #define SOS_BOARD_VERSION "0.1"
-#define SOS_BOARD_NAME "Fogo Small Talk"
+#define SOS_BOARD_NAME SL_CONFIG_NAME
 
 #define SOS_BOARD_USB_RX_BUFFER_SIZE 512
 #define SOS_BOARD_STDIO_BUFFER_SIZE 512
