@@ -22,8 +22,9 @@ limitations under the License.
 #include <mcu/debug.h>
 #include <cortexm/task.h>
 #include <sos/link/types.h>
+#include <mcu/bootloader.h>
+
 #include "board_config.h"
-#include <mcu/arch/stm32/stm32h7xx/stm32h7xx_hal.h>
 
 #define TRACE_COUNT 8
 #define TRACE_FRAME_SIZE sizeof(link_trace_event_t)
@@ -87,3 +88,25 @@ void board_event_handler(int event, void * args){
 			break;
 	}
 }
+
+#if _IS_BOOT
+
+void exec_bootloader(void * args){
+	//write SW location with key and then reset
+
+	cortexm_reset(0);
+}
+
+void boot_event(int event, void * args){
+	mcu_board_execute_event_handler(event, args);
+}
+
+
+const bootloader_api_t mcu_core_bootloader_api = {
+	.code_size = (u32)&_etext,
+	.exec = 0,
+	.usbd_control_root_init = 0,
+	.event = boot_event
+};
+#endif
+

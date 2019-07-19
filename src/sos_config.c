@@ -39,6 +39,8 @@ limitations under the License.
 #include <sos/fs/devfs.h>
 #include <sos/fs/sffs.h>
 #include <sos/sos.h>
+#include <device/drive_cfi.h>
+
 
 #include "config.h"
 #include "link_config.h"
@@ -61,6 +63,7 @@ const sos_board_config_t sos_board_config = {
 	.start_stack_size = SOS_DEFAULT_START_STACK_SIZE,
 	.socket_api = 0,
 	.request = 0,
+	.git_hash = SOS_GIT_HASH,
 	.trace_dev = "/dev/trace",
 	.trace_event = SOS_BOARD_TRACE_EVENT
 };
@@ -93,9 +96,90 @@ UARTFIFO_DECLARE_CONFIG_STATE(uart0_fifo, 1024, 64,
 
 FIFO_DECLARE_CONFIG_STATE(stdio_in, SOS_BOARD_STDIO_BUFFER_SIZE);
 FIFO_DECLARE_CONFIG_STATE(stdio_out, SOS_BOARD_STDIO_BUFFER_SIZE);
-CFIFO_DECLARE_CONFIG_STATE_4(board_fifo, 256);
 
-SWITCHBOARD_DECLARE_CONFIG_STATE(switchboard, devfs_list, 8, 32, 256);
+const stm32_qspi_dma_config_t qspi_dma_config = {
+	.qspi_config = {
+		.attr = {
+			.o_flags = QSPI_FLAG_SET_MASTER,
+			.freq = 60000000UL,
+			.pin_assignment = {
+				.data[0] = {3,11}, //PD11
+				.data[1] = {5,9}, //PF9
+				.data[2] = {5,7}, //PF7
+				.data[3] = {5,6}, //PF6
+				.sck = {5,10}, //PF10
+				.cs = {6,6} //PG6
+			}
+		}
+	},
+	.dma_config = {
+		.tx = {
+			.dma_number = STM32_DMA2,
+			.stream_number = 7,
+			.channel_number = 3,
+			.priority = STM32_DMA_PRIORITY_LOW,
+			.o_flags = STM32_DMA_FLAG_IS_NORMAL |
+			STM32_DMA_FLAG_IS_FIFO |
+			STM32_DMA_FLAG_IS_MEMORY_TO_PERIPH |
+			STM32_DMA_FLAG_IS_MEMORY_BYTE |
+			STM32_DMA_FLAG_IS_PERIPH_BYTE
+		},
+		.rx = {
+			.dma_number = STM32_DMA2,
+			.stream_number = 7,
+			.channel_number = 3,
+			.priority = STM32_DMA_PRIORITY_LOW,
+			.o_flags = STM32_DMA_FLAG_IS_NORMAL |
+			STM32_DMA_FLAG_IS_FIFO |
+			STM32_DMA_FLAG_IS_PERIPH_TO_MEMORY |
+			STM32_DMA_FLAG_IS_MEMORY_BYTE |
+			STM32_DMA_FLAG_IS_PERIPH_BYTE
+		}
+	}
+};
+
+const devfs_device_t qspi_drive_device = DEVFS_DEVICE("qspi", mcu_qspi_dma, 0, &qspi_dma_config, 0, 0666, SOS_USER_ROOT, S_IFCHR);
+
+const drive_cfi_config_t drive_cfi_config = {
+	.serial_device = &qspi_drive_device,
+	.info = {
+		.addressable_size = 1,
+		.write_block_size = 1, //smallest available write size
+		.num_write_blocks = 64*1024*1024UL,  //64MB (512Mbit)
+		.erase_block_size = 4096, //smallest eraseable block
+		.erase_block_time = 30000UL, //45ms typical
+		.erase_device_time = 140000000UL, //140s typical
+		.bitrate = 66000000UL
+	},
+	.opcode = {
+		.write_enable = 0x06,
+		.page_program = 0x02,
+		.block_erase = 0x20,
+		.device_erase = 0xC7,
+		.fast_read = 0xEB,
+		.power_up = 0xAB,
+		.power_down = 0xB9,
+		.enable_reset = 0x66,
+		.reset = 0x99,
+		.protect = 0x7E,
+		.unprotect = 0x7A,
+		.read_busy_status = 0x05, //busy bit is bit 0 of status register 1
+		.busy_status_mask = 0x01,
+		.enter_qpi_mode = 0x35,
+		.enter_4byte_address_mode = 0xb7,
+		.page_program_size = 256,
+		.read_dummy_cycles = 6,
+		.write_dummy_cycles = 0
+	},
+	.cs = { 0xff, 0xff },
+	.qspi_flags =
+	QSPI_FLAG_IS_OPCODE_QUAD |
+	QSPI_FLAG_IS_DATA_QUAD |
+	QSPI_FLAG_IS_ADDRESS_QUAD |
+	QSPI_FLAG_IS_ADDRESS_32_BITS
+};
+
+drive_cfi_state_t drive_cfi_state MCU_SYS_MEM;
 
 /* This is the list of devices that will show up in the /dev folder.
  */
