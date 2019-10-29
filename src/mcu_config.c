@@ -27,17 +27,7 @@ limitations under the License.
 static char stm32_usb_rx_buffer[SOS_BOARD_USB_RX_BUFFER_SIZE] MCU_SYS_MEM;
 
 const stm32_config_t stm32_config = {
-	.o_flags = STM32_ARCH_O_FLAGS,
-	.clock_pllm = STM32_ARCH_CLOCK_PLLM,
-	.clock_plln = STM32_ARCH_CLOCK_PLLN,
-	.clock_pllp = STM32_ARCH_CLOCK_PLLP,
-	.clock_pllq = STM32_ARCH_CLOCK_PLLQ,
-	.clock_pllr = STM32_ARCH_CLOCK_PLLR,
-	.clock_ahb_clock_divider = STM32_ARCH_CLOCK_AHB_CLOCK_DIVIDER,
-	.clock_apb1_clock_divider = STM32_ARCH_CLOCK_APB1_CLOCK_DIVIDER,
-	.clock_apb2_clock_divider = STM32_ARCH_CLOCK_APB2_CLOCK_DIVIDER,
-	.clock_voltage_scale = STM32_ARCH_CLOCK_VOLTAGE_SCALE,
-	.clock_flash_latency = STM32_ARCH_CLOCK_FLASH_LATENCY,
+	.flash_program_millivolts = 3000,
 	.usb_rx_buffer = stm32_usb_rx_buffer,
 	.usb_rx_buffer_size = SOS_BOARD_USB_RX_BUFFER_SIZE
 };
@@ -62,5 +52,11 @@ const mcu_board_config_t mcu_board_config = {
 	.event_handler = SOS_BOARD_EVENT_HANDLER,
 	.led = {9, 2}, //PJ2
 	.arch_config = &stm32_config,
-	.o_mcu_debug = MCU_DEBUG_INFO | MCU_DEBUG_SYS | MCU_DEBUG_USER0 | MCU_DEBUG_USER1 | MCU_DEBUG_DEVICE
+	.o_mcu_debug =
+	MCU_DEBUG_INFO |
+	MCU_DEBUG_SYS |
+	MCU_DEBUG_USER0 |
+	MCU_DEBUG_USER1 |
+	//MCU_DEBUG_MALLOC |
+	MCU_DEBUG_DEVICE
 };

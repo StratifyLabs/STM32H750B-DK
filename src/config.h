@@ -25,14 +25,17 @@ limitations under the License.
 
 #include "board_config.h"
 
-//openocd -f interface/stlink-v2-1.cfg -f target/stm32h7x_stlink.cfg
-//openocd -f stlink-fixed.cfg -f target/stm32h7x.cfg -c "program ./TangoBSP/build_debug_boot/TangoBSP.bin 0x08000000; reset run; exit;"
+//openocd -f interface/stlink-v2-1.cfg -f target/stm32h7x.cfg -c "program ./STM32H750B-DK/build_boot_debug/STM32H750B-DK.bin 0x08000000; reset run; exit;"
 
 
 #define SOS_BOARD_SYSTEM_CLOCK 400000000
-#define SOS_BOARD_SYSTEM_MEMORY_SIZE (8192*3)
+#if _IS_BOOT
+#define SOS_BOARD_SYSTEM_MEMORY_SIZE (32*1024)
+#else
+#define SOS_BOARD_SYSTEM_MEMORY_SIZE (64*1024)
+#endif
 #define SOS_BOARD_ID SL_CONFIG_DOCUMENT_ID
-#define SOS_BOARD_VERSION "0.1"
+#define SOS_BOARD_VERSION SL_CONFIG_VERSION_STRING
 #define SOS_BOARD_NAME SL_CONFIG_NAME
 #define SOS_BOARD_FLAGS SYS_FLAG_IS_ACTIVE_ON_IDLE
 
@@ -44,19 +47,6 @@ limitations under the License.
 #define SOS_BOARD_TASK_TOTAL 10
 #define SOS_BOARD_EVENT_HANDLER board_event_handler
 #define SOS_BOARD_TRACE_EVENT board_trace_event
-
-#define STM32_ARCH_O_FLAGS STM32_CONFIG_FLAG_IS_HSE_ON
-#define STM32_ARCH_CLOCK_PLLM 4
-#define STM32_ARCH_CLOCK_PLLN 216
-#define STM32_ARCH_CLOCK_PLLP 2
-#define STM32_ARCH_CLOCK_PLLQ 9
-#define STM32_ARCH_CLOCK_PLLR 2
-#define STM32_ARCH_CLOCK_AHB_CLOCK_DIVIDER 1
-#define STM32_ARCH_CLOCK_APB1_CLOCK_DIVIDER 4
-#define STM32_ARCH_CLOCK_APB2_CLOCK_DIVIDER 2
-#define STM32_ARCH_CLOCK_48_CLOCK_SELECTION 0
-#define STM32_ARCH_CLOCK_VOLTAGE_SCALE 1
-#define STM32_ARCH_CLOCK_FLASH_LATENCY 7
 
 //--------------------------------------------Symbols-------------------------------------------------
 
@@ -76,10 +66,7 @@ limitations under the License.
  */
 
 #define SYMBOLS_IGNORE_DCOMPLEX 1
-#define SYMBOLS_IGNORE_POSIX_TRACE 1 //Always ignore -- deprecated
-#define SYMBOLS_IGNORE_SG 1 //Stratify Graphics -- ignore if board will not support displays
 #define SYMBOLS_IGNORE_SOCKET 1
-#define SYMBOLS_IGNORE_LWIP 1
 
 //#define SOS_BOARD_ARM_DSP_API_Q15 1
 //#define SOS_BOARD_ARM_DSP_API_Q31 1
