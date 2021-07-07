@@ -16,37 +16,32 @@ limitations under the License.
 
 */
 
-
 #ifndef CONFIG_H_
 #define CONFIG_H_
 
-#include <mcu/arch.h>
 #include "sl_config.h"
+#include <sos/arch.h>
+#include <sos/debug.h>
 
-#include "board_config.h"
-
-//openocd -f interface/stlink-v2-1.cfg -f target/stm32h7x.cfg -c "program ./STM32H750B-DK/build_boot_debug/STM32H750B-DK.bin 0x08000000; reset run; exit;"
-
-
-#define SOS_BOARD_SYSTEM_CLOCK 400000000
+#define CONFIG_SYSTEM_CLOCK 480000000
 #if _IS_BOOT
-#define SOS_BOARD_SYSTEM_MEMORY_SIZE (32*1024)
+#define CONFIG_SYSTEM_MEMORY_SIZE (32 * 1024)
 #else
-#define SOS_BOARD_SYSTEM_MEMORY_SIZE (64*1024)
+#define CONFIG_SYSTEM_MEMORY_SIZE (64 * 1024)
 #endif
-#define SOS_BOARD_ID SL_CONFIG_DOCUMENT_ID
-#define SOS_BOARD_VERSION SL_CONFIG_VERSION_STRING
-#define SOS_BOARD_NAME SL_CONFIG_NAME
-#define SOS_BOARD_FLAGS SYS_FLAG_IS_ACTIVE_ON_IDLE
+#define CONFIG_BOARD_ID SL_CONFIG_DOCUMENT_ID
+#define CONFIG_BOARD_VERSION SL_CONFIG_VERSION_STRING
+#define CONFIG_BOARD_NAME SL_CONFIG_NAME
+#define CONFIG_BOARD_FLAGS SYS_FLAG_IS_ACTIVE_ON_IDLE
 
-#define SOS_BOARD_USB_RX_BUFFER_SIZE 512
-#define SOS_BOARD_STDIO_BUFFER_SIZE 512
-#define SOS_BOARD_TMR 1
+#define CONFIG_DEBUG_FLAGS                                                     \
+  (SOS_DEBUG_MESSAGE | SOS_DEBUG_SYS | SOS_DEBUG_DEVICE | SOS_DEBUG_USER0)
 
-//Total number of tasks (threads) for the entire system
-#define SOS_BOARD_TASK_TOTAL 10
-#define SOS_BOARD_EVENT_HANDLER board_event_handler
-#define SOS_BOARD_TRACE_EVENT board_trace_event
+#define CONFIG_USB_RX_BUFFER_SIZE 512
+#define CONFIG_STDIO_BUFFER_SIZE 512
+
+// Total number of tasks (threads) for the entire system
+#define CONFIG_TASK_TOTAL 10
 
 //--------------------------------------------Symbols-------------------------------------------------
 
@@ -60,7 +55,8 @@ limitations under the License.
  * might find it challenging when some functions are missing (the
  * applications will compile but fail to install).
  *
- * See [sos/symbols/defines.h](https://github.com/StratifyLabs/StratifyOS/blob/master/include/sos/symbols/defines.h)
+ * See
+ * [sos/symbols/defines.h](https://github.com/StratifyLabs/StratifyOS/blob/master/include/sos/symbols/defines.h)
  * for all available switches.
  *
  */
@@ -77,7 +73,7 @@ limitations under the License.
 #define SOS_BOARD_ARM_DSP_API_F32 1
 #define SOS_BOARD_ARM_DSP_CONVERSION_API 1
 
-//other ignore switches
+// other ignore switches
 #if 0
 #define SYMBOLS_IGNORE_MATH_F 1
 #define SYMBOLS_IGNORE_DOUBLE 1
@@ -91,7 +87,5 @@ limitations under the License.
 #define SYMBOLS_IGNORE_SEM 1
 #define SYMBOLS_IGNORE_MQ 1
 #endif
-
-
 
 #endif /* CONFIG_H_ */
