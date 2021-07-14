@@ -62,31 +62,6 @@ void debug_initialize() {
   m_huart.Init.ClockPrescaler = UART_PRESCALER_DIV1;
   m_huart.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
   HAL_UART_Init(&m_huart);
-
-  if (HAL_UARTEx_SetTxFifoThreshold(&m_huart, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    ;
-  }
-  if (HAL_UARTEx_SetRxFifoThreshold(&m_huart, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    ;
-  }
-  if (HAL_UARTEx_DisableFifoMode(&m_huart) != HAL_OK)
-  {
-    ;
-  }
-
-  u32 clocksource;
-  UART_GETCLOCKSOURCE((&m_huart), clocksource);
-  sos_debug_printf("UART Clock source %d\n",  clocksource );
-
-  u32 clock_value = HAL_RCC_GetPCLK1Freq();
-  sos_debug_printf("UART Clock value %d\n",  clock_value );
-  clock_value = HAL_RCC_GetHCLKFreq();
-  sos_debug_printf("HCLK value %d\n",  clock_value );
-  clock_value = HAL_RCC_GetSysClockFreq();
-  sos_debug_printf("Sys Clock value %d\n",  clock_value );
-
 #endif
 
 #if 0

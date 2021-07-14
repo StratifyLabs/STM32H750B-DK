@@ -29,7 +29,7 @@ project(STM32H750B-DK)
 
 
 #Stratify Labs assigned hardware ID
-set(HARDWARE_ID 0x00000000)
+set(HARDWARE_ID 0x00000027)
 set(BOOT_START_ADDRESS 0x08000000)
 set(KERNEL_START_ADDRESS 0x24000000)
 set(KERNEL_LINKER_FILE ldscripts/stm32h750xbram-rom.ld)
